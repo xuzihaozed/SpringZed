@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <import resource="beans2.xml"></import>                     
+<bean id="A" class="com.xu.pojos.Person" name="a"></bean>
+<bean id="B" class="com.xu.pojos.Dog" name="b">
+<constructor-arg type="java.lang.String" value="徐子豪"></constructor-arg></bean>
+<alias name="B" alias="dog"/>
+</beans>
